@@ -1,0 +1,14 @@
+.eventA h3, .eventB h3{
+    text-align: center;
+}
+
+video{
+    width: 500px;
+}
+
+@media (max-width: 575.98px) {
+    video {
+        width: 100%;
+    }
+}
+

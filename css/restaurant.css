@@ -1,0 +1,250 @@
+.bannerRestau {
+    background-image: url('../img/restau/restaurant-banner.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    width: 100%;
+    z-index: -1;
+    height: 45vh;
+    position: relative;
+}
+
+.title-restaurant {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.chef {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.chef h3 {
+    width: 100%;
+}
+
+.chef img[src="img/restau/chef.jpg"] {
+    max-width: 100%;
+    float: left;
+    margin-right: 15px;
+}
+
+.chef p {
+    padding: 0 10px;
+    text-align: justify;
+}
+
+.cartes {
+    width: 80%;
+    margin: auto;
+}
+
+.section {
+    display: flex;
+}
+
+.menu {
+    border: 1px solid var(--gold);
+}
+
+.menu p {
+    text-align: center;
+}
+
+.menu h4 {
+    text-align: center;
+}
+
+.menu img {
+    max-width: 100%;
+}
+
+@media (max-width: 991.98px) {
+    .menu {
+        flex-direction: column;
+    }
+    
+}
+
+@media (max-width: 575.98px) {
+    .chef img[src="img/restau/chef.jpg"] {
+        margin-right: unset;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+/* SCHEDULE */
+
+.today {
+    color: var(--gold);
+    border-top: 1px solid var(--lightgold);
+    border-bottom: 1px solid var(--lightgold);
+}
+
+.schedule {
+    color: var(--anthracite);
+    padding: 25px;
+    border: 1px solid var(--gold);
+}
+
+/* GALLERY SOINS */
+#info img {
+    border: none;
+    width: 160px;
+    height: 180px;
+}
+
+#info .col {
+    overflow: visible;
+}
+
+#info {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Slider */
+.slick-slider {
+    position: relative;
+
+    display: block;
+    box-sizing: border-box;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+    position: relative;
+
+    display: block;
+    overflow: hidden;
+
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus {
+    outline: none;
+}
+
+.slick-list.dragging {
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -o-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+    position: relative;
+    top: 0;
+    left: 0;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+    display: table;
+
+    content: '';
+}
+
+.slick-track:after {
+    clear: both;
+}
+
+.slick-loading .slick-track {
+    visibility: hidden;
+}
+
+.slick-slide {
+    display: none;
+    float: left;
+
+    height: 100%;
+    min-height: 1px;
+}
+
+[dir='rtl'] .slick-slide {
+    float: right;
+}
+
+.slick-slide img {
+    display: block;
+    width: 640px;
+    height: 320px;
+}
+
+.slick-slide.slick-loading img {
+    display: none;
+}
+
+.slick-slide.dragging img {
+    pointer-events: none;
+}
+.slick-initialized .slick-slide {
+    display: block;
+}
+
+.slick-loading .slick-slide {
+    visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+@media(max-width: 640px) {
+    .bannerRestau {
+        background-position: center;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .slick-slide img {
+        width: 100vw;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .slick-slide img {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slick-slide img {
+        width: 34vw;
+    }
+}

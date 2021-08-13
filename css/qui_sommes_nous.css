@@ -1,0 +1,108 @@
+.banner-whoAreWe {
+    background-image: url('../img/qsn/qui_sommes_nous.png');
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    width: 100%;
+    z-index: -1;
+    height: 45vh;
+    position: relative;
+}
+
+.title-qsn {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+}
+
+.col{
+    width: 500px;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.event,
+.press,
+.join,
+.location {
+    border: 1px solid var(--gold);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.options {
+    border: none;
+    height: 50px;
+    color: var(--lightgold);
+    text-align: center;
+    box-shadow: none;
+}
+.textHistory .options img{
+    color: var(--lightgold) !important;
+}
+
+.textHistory img{
+    width: 26px;
+}
+.textHistory p{
+    color: var(--anthracite);
+}
+.location h2{
+    padding: 5px 20px 0 20px;
+}
+.location li img{
+    width: 1.8rem;
+}
+.textHistory {
+    padding: 0 50px;
+}
+
+.textHistory {
+    align-self: center;
+    justify-content: center;
+} 
+
+.textHistory p {
+    text-align: justify;
+}
+
+.timeline2 {
+    display: none;
+}
+
+.badge-primary {
+    background-color: var(--lightgold);
+    color: var(--anthracite);
+}
+
+.container-fluid iframe{
+    width: 100%;
+}
+
+.center-btn {
+    text-align: center;
+}
+
+@media(max-width: 640px) {
+    .banner-whoAreWe {
+        background-position: bottom;
+        height: 35vh;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .timeline1 {
+        display: none;
+    }
+
+    .timeline2 {
+        display: block;
+    }
+}

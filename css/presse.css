@@ -1,0 +1,60 @@
+.pressContact {
+    margin: auto;
+}
+
+.firstArticle img {
+    width: 200px;
+}
+
+.fa-phone-alt,
+.fa-envelope {
+    color: var(--lightgold);
+}
+
+.hotelNews {
+    border: 1px solid var(--gold);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.hotelNews img {
+    width: 85%;
+}
+
+.hotelNews iframe {
+    width: 85%;
+    height: 100%;
+}
+
+.hotelNews .row {
+    justify-content: center;
+    align-items: center;
+}
+
+.hotelNews .col {
+    overflow: hidden;
+}
+
+.hotelNews h4 {
+    font-size: 1.7em;
+}
+
+.col-4 {
+    padding-left: unset;
+}
+
+.col-8 {
+    align-self: center;
+}
+
+.pressText {
+    text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+    .hotelNews img,
+    .hotelNews iframe {
+        width: 100%;
+    }
+
+
+}

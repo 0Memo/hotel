@@ -1,0 +1,8 @@
+.policy p {
+    text-align: justify;
+}
+
+.animals img[src="img/petfriendly.png"] {
+    width: 70px;
+}
+

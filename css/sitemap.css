@@ -1,0 +1,13 @@
+.siteMapTitle{
+    color: var(--gold);
+}
+
+.siteMap {
+    height: 70vh;
+}
+
+@media (max-width: 991.98px) {
+    .siteMap {
+        height: 100%;
+    }
+}

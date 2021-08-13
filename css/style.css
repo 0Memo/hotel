@@ -1,0 +1,573 @@
+:root {
+    --anthracite: #1d1d1d;
+    --lightgold : #D9B77B;
+    --gold : #C89740;
+}
+
+@font-face {
+    font-family: "Canter";
+    src: url("../fonts/Canter-Bold.woff2") format("woff2"),
+        url("../fonts/Canter-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Orkney";
+    src: url("../fonts/Orkney-Light.woff2") format("woff2"),
+        url("../fonts/Orkney-Light.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color : var(--anthracite);
+    font-family: "Roboto";
+}
+
+strong {
+    font-weight: normal;
+}
+
+.uniqueShadow {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#titleBanner {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    top: 25%;
+}
+
+#titleBanner img {
+    height: 100%;
+    -webkit-filter: drop-shadow(1px 1px 2px var(--anthracite));
+    filter: drop-shadow(1px 1px 2px var(--anthracite));
+}
+
+.pBanner {
+    font-family: "Orkney";
+    font-size: 2em;
+    text-shadow: 1px 0px 5px white;
+    font-weight: bold;
+    color:  var(--anthracite);
+}
+
+.separator {
+    background-color: var(--gold);
+    display: block;
+    height: 1px;
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    font-family: "Canter";
+    font-size: 10em;
+    text-shadow: 1px 0px 5px white;
+    color:  var(--anthracite);
+}
+
+.stars {
+    font-size: .5em;
+    vertical-align: top;
+    color: var(--gold);
+    text-shadow: 1px 1px 2px var(--anthracite);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Orkney";
+    color: var(--gold);
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2.5em;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+.container-fluid {
+    margin-left: unset;
+    margin-right: unset;
+    padding-left: unset;
+    padding-right: unset;
+}
+
+.container {
+    padding-left: unset;
+    padding-right: unset;
+}
+
+.text {
+    padding: 0 50px;
+    align-self: center;
+    justify-content: center;
+}
+
+.text p {
+    text-align: justify;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin-left:0;
+    padding-left:0;
+}
+
+a {
+    color: var(--anthracite);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--anthracite);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-outline-secondary {
+    border-color: var(--lightgold);
+    color: var(--lightgold);
+}
+
+.btn-outline-secondary:hover {
+    border-color: var(--gold);
+    background-color: var(--gold);
+    color: white;
+    animation-duration: 1s;
+    transition: ease-out 1s;
+}
+
+.btn-outline-secondary:focus {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+    border-color: var(--gold);
+    background-color: var(--gold);
+    color: white;
+}
+
+.btn-outline-secondary:not(:disabled):not(.disabled):active {
+    border-color: var(--gold);
+    background-color: var(--gold);
+}
+
+.btn-outline-secondary.disabled,
+.btn-outline-secondary:disabled {
+    border-color: #6c757d;
+}
+
+.btn-outline-secondary.disabled:hover,
+.btn-outline-secondary:disabled:hover {
+    border-color: #6c757d;
+    background-color: #6c757d;
+    color: white;
+    animation-duration: 1s;
+    transition: ease-out 1s;
+}
+
+/* SLIDER */
+.banner img {
+    height: 100vh;
+}
+
+.carousel-item {
+    opacity: .5;
+}
+
+/* BANNER STATIC */
+
+.banner2 img {
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    opacity: .5;
+    width: 100%;
+    z-index: -1;
+    height: 70vh;
+}
+
+
+/* NAVIGATION */
+#logo {
+    width: 60px;
+    -webkit-filter: drop-shadow(1px 1px 2px var(--anthracite));
+    filter: drop-shadow(1px 1px 2px var(--anthracite));
+}
+
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+    transition: all .5s;
+}
+
+.collapse ul li a,
+.collapse ul li a:after,
+.collapse ul li a:before {
+    transition: all .5s;
+}
+
+.navbar-nav a {
+    color: rgba(0,0,0,.5);
+    text-decoration: none;
+}
+
+.navbar-nav a:hover {
+    color: var(--anthracite);
+}
+
+#navbars {
+    z-index: 999;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+
+.fa-calendar-alt {
+    color: var(--lightgold);
+}
+
+fa-calendar-alt:hover {
+    color: var(--gold);
+    transition: ease-out 1s;
+} 
+
+/* stroke */
+nav.stroke ul li a,
+.collapse.stroke ul li a {
+    position: relative;
+}
+
+nav.stroke ul li a:after,
+.collapse.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: var(--gold);
+    height: 2px;
+}
+
+nav.stroke ul li a:hover,
+.collapse.stroke ul li a:hover {
+    font-weight: bold;
+}
+
+nav.stroke ul li a:hover:after,
+.collapse.stroke ul li a:hover:after {
+    width: 100%;
+}
+
+.btn-outline-success {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.btn-outline-success:hover {
+    background-color: var(--gold);
+    border-color: var(--gold);
+}
+
+
+/* FOOTER */
+.separator-end {
+    display: block;
+    height: 1px;
+    margin: 30px auto;
+    width: 80%;
+    background-color: var(--gold);
+}
+
+.basDePage .row {
+    margin: auto;
+    align-content: flex-start;
+}
+
+.basDePage h4 {
+    text-align: center;
+}
+
+.iconesFooter i {
+    color: var(--lightgold);
+    font-size: 2.2em;
+}
+
+.iconesFooter img {
+    width: 50px;
+}
+
+.iconesFooter i:hover {
+    color: var(--gold);
+    animation: swing;
+    animation-duration: 1s;
+    transition: ease-out 1s;
+}
+
+.iconesFooter img:hover {
+    color: var(--gold);
+}
+
+.avis:hover {
+    animation-duration: 1s;
+    transition: ease-out 1s;
+}
+
+footer {
+    background-color: var(--lightgold);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.5);
+}
+
+footer .row {
+    align-items: flex-end;
+}
+
+footer h3 {
+    font-family: "Canter";
+    font-size: 2.5em;
+    color: var(--anthracite);
+}
+
+footer .fa-heart {
+    color: #FF6666;
+}
+
+.titleBannerMini {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    z-index: 99;
+}
+
+.banner2 {
+    position: relative;
+    overflow: hidden;
+}
+
+/* PANIER */
+.badge1 {
+    background-color: #C89740;
+    border-radius: 50%;
+    color: white;
+    display: inline-block;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    vertical-align: super;
+    margin-left: 3px;
+    white-space: nowrap;
+}
+.modal-header {
+    background-color: var(--lightgold);
+}
+.booking h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--anthracite);
+}
+.modalContent {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.modalContent ul li, .modalContent h6 {
+    padding: 1% 5%;
+}
+.modalContent ul li:first-child {
+    margin-top: 1%;
+}
+.modalContent img {
+    width: 100%;
+    height: auto;
+}
+hr {
+    background-color: var(--gold);
+}
+.modal-footer {
+    border-top: none;
+}
+.modal-footer .btn {
+    font-style: normal;
+    margin: 0 auto;
+}
+.modal-footer .btn:hover {
+    font-style: normal;
+}
+
+/* AUTOCOMPLETE */
+/*the container must be positioned relative:*/
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+/* END */
+
+/* FORMULAIRES */
+.form-control:focus {
+    border-color: var(--lightgold);
+    box-shadow: 0 0 5px 0 var(--lightgold);
+}
+
+.custom-select:focus {
+    border-color: var(--lightgold);
+    box-shadow: 0 0 5px 0 var(--lightgold);
+}
+
+
+
+/* ANCRES */
+div#recrutement:target,
+div#access:target,
+div#brasserie:target,
+div#degustation:target,
+div#menuSoir:target,
+div#detente:target,
+div#decouverte:target,
+div#relaxant:target,
+div#plaisir:target,
+div#evasion:target,
+div#votreAvis:target {
+    padding-top: 4em; 
+    margin-top: -7em; 
+}
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 991.98px) {
+    h1 {
+        font-size: 5em;
+    }
+
+    .banner img {
+        height: 45vh;
+    }
+
+    #titleBanner {
+        top: 15%;
+    }
+}
+
+/* PRINT PAGE */
+@media print {
+    @page {margin: 1cm;}
+    .banner {display: none;}
+    .banner2 {display:none;}
+    .separator {display: none;}
+    .separator-end {display: none;}
+    .basDePage {display:none;}
+    footer {display:none;}
+    img {display: none;}
+
+    /* INDEX */
+    .indexCategory {text-align: center;}
+    .cards {display: none;}
+    .room {display: none;}
+    .chef {display: none;}
+    .leSpa {display: none;}
+    .shuttle {display: none !important;}
+    .shuttle2 {display: none;}
+
+    /* CHAMBRES */
+    .banner-room {display: none;}
+    .banner-classicRoom {display: none;}
+    .categories {display:none;}
+    .suite {page-break-before: always;}
+
+    /* RESTAURANT */
+    #slider-restau {display: none;}
+    .menu {page-break-before: always;}
+
+    /* SPA */
+    .decouverte {page-break-before: always;}
+    .plaisir {page-break-before: always;}
+
+    /* QUI SOMMES NOUS */
+    .event {display: none;}
+    .press {display: none;}
+    .recrutement {display: none;}
+    .join {display: none;}
+    .location {page-break-before: always;}
+
+    /* EVENEMENTS */
+    video {display: none;}
+
+    /* PRESS */
+    .articles {display: none;}
+    .news {display: none;}
+}

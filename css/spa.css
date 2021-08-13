@@ -1,0 +1,197 @@
+.bannerSpa {
+    background-image: url('../img/spa/institut2.jpg');
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    opacity: .5;
+    width: 100%;
+    z-index: -1;
+    height: 45vh;
+    position: relative;
+}
+
+.title-spa {
+    position: absolute;
+    top: 5%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    z-index: 99;
+}
+
+#spa {
+    width: 80%;
+    margin: auto;
+}
+
+#spa .col {
+    width: 500px;
+    overflow: hidden;
+}
+
+#spa img {
+    width: 100%;
+    height: auto;
+}
+
+#spa .row {
+    border: 1px solid var(--gold);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+#spa .options {
+    border: none;
+    height: 50px;
+    color: var(--lightgold);
+    text-align: center;
+    box-shadow: none;
+}
+
+.options p {
+    text-align: center !important;
+}
+
+#spa .soins .row,
+#info .row {
+    border: none;
+    box-shadow: none;
+}
+
+#spa .soins .col {
+    width: auto;
+}
+
+#spa img[src="img/spa/accueil_spa.jpg"] {
+    height: 500px;
+}
+
+#spa .textSpa {
+    padding: 0 50px;
+}
+
+#spa .textSpa {
+    align-self: center;
+    justify-content: center;
+}
+
+#spa .textSpa p {
+    text-align: justify;
+}
+
+.center-btn {
+    text-align: center;
+}
+
+.badge-primary {
+    background-color: var(--lightgold);
+    vertical-align: top;
+    font-size: .5em;
+}
+
+.today {
+    color: var(--gold);
+    border-top: 1px solid var(--lightgold);
+    border-bottom: 1px solid var(--lightgold);
+}
+
+.schedule {
+    color: var(--anthracite);
+    padding: 25px;
+    border: 2px solid var(--gold);
+}
+
+/* GALLERY SOINS */
+#info img {
+    border: none;
+    width: 160px;
+    height: 180px;
+}
+
+#info .col {
+    overflow: visible;
+}
+
+.imgEffets {
+    width: 510px;
+    margin: auto;
+}
+
+.imgEffets li {
+    list-style: none;
+    width: 160px;
+    height: 180px;
+    margin: 5px;
+    float: left;
+}
+
+.imgEffets li:nth-child(4) {
+    clear: both;
+}
+
+.imgEffets img {
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    box-shadow: 0 0 3px #333333;
+    transition: .2s ease-in-out;
+}
+
+.imgEffets li:hover img {
+    z-index: 2;
+    transform: scale(1.5);
+    box-shadow: 0 0 10px #333333;
+}
+
+.imgEffets:hover li:not(:hover) img {
+    filter: grayscale(1) blur(5px);
+}
+
+/* MODAL */
+.headerSpa {
+    width: 100%;
+}
+
+.titleSpa {
+    color: var(--anthracite);
+}
+
+@media(max-width: 640px) {
+    .bannerSpa {
+        background-position: top;
+        height: 35vh;
+    }
+
+    #spa .textSpa {
+        margin-top: 20px;
+        padding: 0 25px;
+    }
+
+    .imgEffets li:nth-child(4) {
+        clear: none;
+    }
+
+    .imgEffets li:nth-child(3) {
+        clear: both;
+    }
+
+    .imgEffets li:nth-child(5) {
+        clear: both;
+    }
+
+    .imgEffets {
+        width: unset;
+        margin: 0 0 0 4em;
+    }
+
+    .imgEffets li {
+        margin: 0;
+    }
+
+    #info img {
+        width: 140px;
+        height: 175px;
+    }
+
+    .imgEffets li:hover img {
+        transform: scale(1.2);
+    }
+}
