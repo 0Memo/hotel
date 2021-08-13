@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta name="category" content="Hotel, Hotel Luxe, Hotel 5 étoiles, Spa, Restaurant">
+        <meta name="description" content="HotelCop 5*, Votre tranquilité et votre satisfaction sont nos priorités absolues. Nous nous mettons en quatre pour vous accueillir comme il se doit, et vous proposer des prestations nous l'espérons à la hauteur de vos attentes, nous sommes à votre écoute.">
+        <meta name="keywords" content="Hotel, Paris 8, Hotel de luxe, Avenue Montaigne, HotelCop, Spa, Restaurant, Chambres, Chambres confort">
+        <meta name="publisher" content="Jessica Viel, Guillaume Mehats">
+        <!-- Fonts Familly -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/e58bdc1b83.js" crossorigin="anonymous"></script>
+        <!-- CSS ANIMATE -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/rooms-classic.css">
+
+        <link rel="icon" type="image/jpg" href="img/logo2.png">
+        <title>HôtelCop 5* | Chambres Confort</title>
+    </head>
+    <body>
+        <section class="banner2">
+            <div class="banner-comfortRoom"></div>
+            <div class="titleBannerMini pt-5">
+                <h1>Chambre confort</h1>
+            </div>
+        </section>
+        
+        <!-- NAVBAR -->
+        <div id="navbars" class="sticky">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light shadow stroke">
+                <a class="navbar-brand mr-5" href="index.html"><img id="logo" src="img/logo2.png" alt="logo hotelcop"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09"
+                    aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarsExample09">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="index.html">Accueil </a>
+                        </li>
+                        <li class="nav-item mr-md-5 active">
+                            <a class="nav-link" href="rooms.html" data-toggle="collapse" data-target="#rooms">Les Chambres
+                            </a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="restaurant.html">Le Restaurant</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="spa.html">Le Spa</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="hotelcop.html" data-toggle="collapse" data-target="#hotel">L'Hôtel</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav flex-row justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link" href="reservation.html" data-toggle="collapse" data-target="#reservation"><i class="far fa-calendar-alt"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link"><i class="fas fa-shopping-basket" data-toggle="modal" data-target="#exampleModalCenter"></i><span class="badge badge1">1</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="img/flag_fr.png" alt="fr"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="img/flag_uk.png" alt="en"></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="collapse" data-target="#searchBar"><i class="fas fa-search"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Second Nav -->
+            <div class="collapse stroke shadow" id="rooms" data-parent="#navbars">
+                <div class="navbar navbar-expand-lg text-center bg-light p-3">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="rooms.html">Les Chambres </a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="rooms-classic.html">Classique</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="rooms-comfort.html">Confort</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="rooms-deluxe.html">Deluxe</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="rooms-suite.html">Suites</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse stroke shadow" id="hotel" data-parent="#navbars">
+                <div class="navbar navbar-expand-lg text-center bg-light p-3">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="qui_sommes_nous.html">Qui sommes-nous ?</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="qui_sommes_nous.html#access">Accès</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="recrutement.html">Recrutement</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="evenements.html">Evènements</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="presse.html">Presse</a>
+                        </li>
+                        <li class="nav-item mr-md-5">
+                            <a class="nav-link" href="avis.html">Avis</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="collapse" id="searchBar" data-parent="#navbars">
+                <div class="bg-light p-3">
+                    <form class="form-inline my-2 my-lg-0 justify-content-end" autocomplete="off">
+                        <div class="autocomplete">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search">
+                        </div>
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+            <div class="collapse stroke shadow" id="reservation" data-parent="#navbars">
+                <div class="navbar navbar-expand-lg bg-light p-3 justify-content-center justify-content-md-end">
+                    <button onclick="window.location ='reservation.html';" type="button" class="btn btn-outline-secondary">Réservation</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="classicRoomPage">
+            <section class="container classicClassic my-5">
+                <h2>La chambre confort</h2>
+                <div class="separator"></div>
+                <div class="row align-content-center my-5">
+                    <div class="col-12 col-md-6 order-0 classicImage">
+                        <img src="img/rooms/comfort_room.jpg" alt="présentation chambre confort">
+                    </div>
+
+                    <div class="col-12 col-md-6 order-1 classicText text-left">
+                        <div class="p-2 p-md-4">
+                            <p>Un décor épuré et résolument contemporain vous accueille dans la Chambre Deluxe. Séparée de la chambre par des portes en verre dépoli, la salle de bain offre une ambiance apaisante.</p>
+                            <p>L’alliance du mobilier contemporain et des équipements de la plus haute technologie lui confère élégance et confort absolu</p>
+                            <div class="row py-5">
+                                <div class="col-12 col-md-6">
+                                    <ul>
+                                        <li><img src="https://img.icons8.com/pastel-glyph/64/000000/bed--v1.png" alt="Lit queen size"/> Lit queen size</li>
+                                        <li><img src="https://img.icons8.com/pastel-glyph/64/000000/air-conditioner--v2.png" alt="Climatisation"/> Climatisation</li>
+                                        <li><img src="https://img.icons8.com/ios-filled/50/000000/waiter.png" alt="Service de chambre"/> Service de chambre</li>
+                                        <li><img src="https://img.icons8.com/ios/50/000000/tv-on.png" alt="Écran plat"/> Écran plat</li>
+                                        <li><img src="https://img.icons8.com/android/24/000000/wifi.png" alt="Wifi libre accès"/> Wifi libre accès</li>
+                                    </ul>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <ul>
+                                        <li><img src="https://img.icons8.com/wired/64/000000/safe.png" alt="Coffre-fort"/> Coffre-fort</li>
+                                        <li><img src="https://img.icons8.com/ios-filled/50/000000/mini-bar.png" alt="Mini bar"/> Mini bar</li>
+                                        <li><img src="https://img.icons8.com/metro/26/000000/shower.png" alt="Douche"/> Douche</li>
+                                        <li><img src="https://img.icons8.com/pastel-glyph/64/000000/towel.png" alt="Peignoir"/> Peignoir</li>
+                                        <li><img src="https://img.icons8.com/ios-filled/50/000000/pet-commands-summon.png" alt="Animaux bienvenus"/> Animaux bienvenus</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container classic_room my-5">
+                <div class="classicPicture1 pb-5">
+                    <a href="img/rooms/chambre_confort01.jpg"><img src="img/rooms/chambre_confort01.jpg" alt="chambre comfort"></a>
+                </div>
+                <div class="classicPicture2 pb-5">
+                    <a href="img/rooms/chambre_confort02.jpg"><img src="img/rooms/chambre_confort02.jpg" alt="chambre comfort"></a>
+                </div>
+                <div class="classicPicture3 pb-5">
+                    <a href="img/rooms/chambre_confort03.jpg"><img src="img/rooms/chambre_confort03.jpg" alt="chambre comfort"></a>
+                </div>
+            </section>
+
+            <section class="container description my-5">
+                <div class="textDescription p-4 mb-5 mb-md-0">
+                    <div class="p-2">
+                        <h4>Les petits plus...</h4>
+                        <ul>
+                            <li>Coffret sensuel : 35€</li>
+                            <li>Bouquet : 35€</li>
+                            <li>Bouqet de champagne : 50€</li>
+                            <li>Privatisation du Spa : 35€/pers./heure</li>
+                            <li>«Spa en semaine» : 2nde heure offerte</li>
+                            <li>«Spa de Minuit» : 1h30 de bonheur, 129€</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="textDescription p-4 mb-5 mb-md-0">
+                    <div class="p-2">
+                        <h4>Informations</h4>
+                        <ul>
+                            <li>Arrivée à partir de 16h30</li>
+                            <li>Chambre à libérer pour 11h30</li>
+                            <li>Chambre non fumeur</li>
+                            <li>Petit déjeuner copieux : 16€</li>
+                            <li>Dînette dans l'intimité de votre chambre : 38€/pers.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="textDescription prix text-center p-4">
+                    <div class="p-2">
+                        <h4>À partir de</h4>
+                        <p><b>950€/nuit</b></p>
+                        <button type="button" class="btn btn-outline-success text-center my-3">Réserver</button>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section class="container categories justify-content-between">
+                <h3>Découvrez nos autres gammes</h3>
+                <div class="row">
+                    <div onclick="window.location ='rooms-classic.html';" class="col-12 col-md-4 picture4">
+                        <div class="bandeau text-center">
+                            <h4>Classique</h4>
+                        </div>
+                    </div>
+                    <div onclick="window.location ='rooms-deluxe.html';" class="col-12 col-md-4 picture2">
+                        <div class="bandeau text-center">
+                            <h4>Deluxe</h4>
+                        </div>
+                    </div>
+                    <div onclick="window.location ='rooms-suite.html';" class="col-12 col-md-4 picture3">
+                        <div class="bandeau text-center">
+                            <h4>Suite</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
+        <!-- MODALE -->
+        <div class="modal fade right" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenter"
+            aria-hidden="true" data-backdrop="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                    <!--Header-->
+                    <div class="modal-header">
+                        <div>
+                            <i class="fas fa-shopping-basket"></i><span class="badge badge1">1</span>
+                        </div>
+                        <div class="offset-3 booking">
+                            <h6 class="heading">Votre réservation</h6>
+                        </div>
+
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="white-text">&times;</span>
+                        </button>
+                    </div>
+
+                    <!--Body-->
+                    <div class="modal-body">
+                        <h6 class="text-center mb-4"><strong>2 personnes</strong> du <strong>16/08/20</strong> au <strong>19/08/20</strong></h6>
+                        <div class="row modalContent">                      
+                            <div class="col col-7 modalText">                                
+                                <ul>
+                                    <li>Chambre deluxe
+                                        <ul>
+                                            <li>7 800€</li>
+                                        </ul>
+                                    </li>
+                                    <li>Petit déjeuner
+                                        <ul>
+                                            <li>96€</li>
+                                        </ul>
+                                    </li>
+                                    <li>Dînette en tout intimité
+                                        <ul>
+                                            <li>1 140€</li>
+                                        </ul>
+                                    </li>
+                                    <li>Coffret sensuel
+                                        <ul>
+                                            <li>105€</li>
+                                        </ul>
+                                    </li>
+                                    <li>Bouquet de champagne
+                                        <ul>
+                                            <li>150€</li>
+                                        </ul>
+                                    </li>
+                                    <li>Privatisation du spa
+                                        <ul>
+                                            <li>70€</li>
+                                        </ul>
+                                    </li>
+                                    <li>Spa de minuit
+                                        <ul>
+                                            <li>397€</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr>
+                                <ul>
+                                    <li>Total : 9 748€</li>
+                                </ul> 
+                            </div>
+                            <div class="col col-5 modalImage">
+                                <img class="img-responsive" src="img/rooms/visuel_modal-room.jpg" alt="logo panier">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <!--Footer-->
+                    <div class="modal-footer flex-left">                        
+                        <button class="btn btn-outline-secondary" data-dismiss="modal">Valider</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="separator-end"></div>
+
+        <section class="container-fluid basDePage my-5">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 justify-content-md-between text-center px-5">
+                <div class="col">
+                    <h4>HOTEL</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="qui_sommes_nous.html">Qui sommes-nous?</a></li>
+                        <li><a href="qui_sommes_nous.html#access">Accès</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="recrutement.html">Recrutement</a></li>
+                        <li><a href="evenements.html">Evènements</a></li>
+                        <li><a href="presse.html">Presse</a></li>
+                        <li><a href="avis.html">Avis</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>CHAMBRES</h4>
+                    <ul>
+                        <li><a href="rooms.html">Les Chambres</a></li>
+                        <li><a href="rooms-classic.html">Classique</a></li>
+                        <li><a href="rooms-comfort.html">Confort</a></li>
+                        <li><a href="rooms-deluxe.html">Deluxe</a></li>
+                        <li><a href="rooms-suite.html">Les Suites</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>RESTAURANT</h4>
+                    <ul>
+                        <li><a href="restaurant.html">Le Restaurant</a></li>
+                        <li><a href="restaurant.html#brasserie">Carte Brasserie</a></li>
+                        <li><a href="restaurant.html#degustation">Carte Dégustation</a></li>
+                        <li><a href="restaurant.html#menuSoir">Carte Restaurant</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h4>SPA</h4>
+                    <ul>
+                        <li><a href="spa.html">Le Spa et nos soins</a></li>
+                        <li><a href="spa.html#decouverte">Soin Découverte</a></li>
+                        <li><a href="spa.html#detente">Soin Détente</a></li>
+                        <li><a href="spa.html#relaxant">Soin Relaxant</a></li>
+                        <li><a href="spa.html#plaisir">Soin Plaisir</a></li>
+                        <li><a href="spa.html#evasion">Soin Evasion</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <div>
+                        <h4>PARTAGEZ</h4>
+                        <div class="iconesFooter">
+                            <a href="#"><i class="fab fa-facebook-square mr-3"></i></a>
+                            <a href="#"><i class="fab fa-instagram-square mr-3"></i></a>
+                            <a href="#"><i class="fab fa-twitter-square mr-3"></i></a>
+                            <a href="#"><i class="fab fa-pinterest-square mr-3"></i></a>
+                        </div>
+                        <div class="pt-3">
+                            <button  onclick="window.location ='avis.html';" type="button" class="btn btn-outline-secondary avis">Avis &starf;&starf;&starf;&starf;&star;</button>
+                        </div>
+                    </div>
+                    <div class="py-3">
+                        <label>Inscrivez-vous à notre newsletter</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                            <div class="input-group-append">
+                                <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="iconesFooter">
+                        <img src="img/petfriendly.png" alt="pet friendly" class="mr-3">
+                        <img src="img/freewifi.png" alt="free wifi" class="mr-3">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <h3 class="text-center">HôtelCop <br><span class="stars">&starf;&starf;&starf;&starf;&starf;</span></h3>
+            <div class="row row-cols-2 justify-content-center mx-0 pb-3">
+                <div class="col-6 text-right">
+                    <ul>
+                        <li>1 avenue Montaigne</li>
+                        <li>75008 Paris</li>
+                        <li>01.02.03.04.05</li>
+                        <li>contact@hotelcop.fr</li>
+                    </ul>
+                    
+                </div>
+                <div class="col-6">
+                    <ul>
+                        <li><a href="mentions_legales.html">Mentions Légales</a></li>
+                        <li><a href="cgv.html">CGV</a></li>
+                        <li><a href="sitemap.html">Plan du site</a></li>
+                        <li><a href="javascript:window.print()">Imprimer la page</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center">
+                <small>Made with <i class="fas fa-heart"></i> by Jessica Viel & Guillaume Mehats</small>
+            </div>
+        </footer>
+
+        <!-- FontAwesome -->
+        <script src="https://kit.fontawesome.com/e58bdc1b83.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+        <!-- Bootstrap JS-jQuery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+        </script>
+        <!-- CUSTOM JS -->
+        <script src="js/autocomplete.js"></script>
+    </body>
+</html>

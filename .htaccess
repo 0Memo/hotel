@@ -1,0 +1,2 @@
+ErrorDocument 404 http://www.jessica-viel.ovh/hotelcop/error404.html
+ErrorDocument 418 http://www.jessica-viel.ovh/hotelcop/error418.html
